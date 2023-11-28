@@ -29,7 +29,7 @@ async function drawHeatMap() {
 
     //Dimensions
     var dim = {
-        width: months.length * 80 + 60,
+        width: months.length * 80 + 360,
         height: box * 7 + 80,
         margin: {
             top: 10,

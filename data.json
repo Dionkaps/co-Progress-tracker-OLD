@@ -232,23 +232,5 @@
         "DISCOUNT": "10",
         "ORDER_DATE": "02-02-2022",
         "BAL_FLAG": "1"
-    },
-    {
-        "DATEID": "20231128",
-        "DB_DATE": "2023-11-28",
-        "DAY": "28",
-        "DAY_NAME_SHORT": "Tue",
-        "WEEKDAYNO": "2",
-        "WEEKNO": 48,
-        "WEEK_OF_MONTH": "4",
-        "MONTHID": "202311",
-        "M_NAME": "Nov-23",
-        "YEARID": "2023",
-        "ORDER_ID": "1",
-        "TOTAL_AMOUNT": "504",
-        "RECIEVED_AMOUNT": "500",
-        "DISCOUNT": "4",
-        "ORDER_DATE": "28-11-2023",
-        "BAL_FLAG": "1"
     }
 ]
