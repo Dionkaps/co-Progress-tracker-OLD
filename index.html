@@ -14,52 +14,27 @@
             <h4 style="font-family: Arial, Helvetica, sans-serif;color:grey;">Order Month Calendar</h4>
         </center>
     </div>
-    <form>
+    <form id="myForm">
         <label>
-            <input type="checkbox" name="betterThanYesterday"> Got better than yesterday?
+            <input type="checkbox" name="betterThanYesterday" id="betterThanYesterday"> Got better than yesterday?
         </label>
         <br>
 
         <label>
-            <input type="checkbox" name="ateWell"> Did you eat well?
+            <input type="checkbox" name="ateWell" id="ateWell"> Did you eat well?
         </label>
         <br>
 
         <label>
-            <input type="checkbox" name="trainedToday"> Did you train today?
+            <input type="checkbox" name="trainedToday" id="trainedToday"> Did you train today?
         </label>
         <br>
 
-        <input type="submit" value="Submit">
+        <input type="button" value="Submit" onclick="getCheckboxValues()">
     </form>
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="calendarHeatMap.js"></script>
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBCFIrx3xJ71001TUnwNDyzZyETyW5wqAQ",
-            authDomain: "co-progress-tracker.firebaseapp.com",
-            databaseURL: "https://co-progress-tracker-default-rtdb.europe-west1.firebasedatabase.app",
-            projectId: "co-progress-tracker",
-            storageBucket: "co-progress-tracker.appspot.com",
-            messagingSenderId: "181903903043",
-            appId: "1:181903903043:web:6b8e01c1f47c586e14c7f6"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-
-        import { getDatabase, set, get, update, remove, ref, child }
-            from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
-
-        const db = getDatabase();
-    </script>
+    <script src="firebase.js"></script>
 </body>
 
 </html>

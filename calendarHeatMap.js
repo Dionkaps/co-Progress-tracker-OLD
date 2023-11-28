@@ -53,8 +53,8 @@ async function drawHeatMap() {
 
     // colorScale
     var colorScale = d3.scaleQuantize()
-        .domain([-1, 1])
-        .range(['#c4405e', '#dfe1e4', '#40c463']);
+        .domain([0, 3])
+        .range(['#dfe1e4', '#80e49a', '#40c463', '#19cf49']);
 
     //Parent SVG
     var svg = d3.select('#orderHeatMap')

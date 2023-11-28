@@ -51,7 +51,7 @@
         "RECIEVED_AMOUNT": "580",
         "DISCOUNT": "20",
         "ORDER_DATE": "01-05-2021",
-        "BAL_FLAG": "1"
+        "BAL_FLAG": "0"
     },
     {
         "DATEID": "20210502",
@@ -69,7 +69,7 @@
         "RECIEVED_AMOUNT": "780",
         "DISCOUNT": "20",
         "ORDER_DATE": "02-05-2021",
-        "BAL_FLAG": "1"
+        "BAL_FLAG": "0"
     },
     {
         "DATEID": "20210503",
@@ -105,7 +105,7 @@
         "RECIEVED_AMOUNT": "880",
         "DISCOUNT": "20",
         "ORDER_DATE": "04-05-2021",
-        "BAL_FLAG": "1"
+        "BAL_FLAG": "2"
     },
     {
         "DATEID": "20210510",
@@ -123,7 +123,7 @@
         "RECIEVED_AMOUNT": "700",
         "DISCOUNT": "20",
         "ORDER_DATE": "10-05-2021",
-        "BAL_FLAG": "1"
+        "BAL_FLAG": "2"
     },
     {
         "DATEID": "20210601",
@@ -141,7 +141,7 @@
         "RECIEVED_AMOUNT": "580",
         "DISCOUNT": "20",
         "ORDER_DATE": "01-06-2021",
-        "BAL_FLAG": "1"
+        "BAL_FLAG": "3"
     },
     {
         "DATEID": "20210602",
