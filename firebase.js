@@ -26,8 +26,42 @@ const db = getDatabase();
 var betterThanYesterdayCheckbox = document.getElementById('betterThanYesterday');
 var ateWellCheckbox = document.getElementById('ateWell');
 var trainedTodayCheckbox = document.getElementById('trainedToday');
+var submitButton = document.getElementById('submitBtn');
 
-// Storing checkbox values in variables
-var betterThanYesterdayValue = betterThanYesterdayCheckbox.checked;
-var ateWellValue = ateWellCheckbox.checked;
-var trainedTodayValue = trainedTodayCheckbox.checked;
+
+function submitData() {
+    // Storing checkbox values in variables
+    var betterThanYesterdayValue = betterThanYesterdayCheckbox.checked;
+    var ateWellValue = ateWellCheckbox.checked;
+    var trainedTodayValue = trainedTodayCheckbox.checked;
+
+    var checkedCount = 0;
+
+
+    if (betterThanYesterdayValue) {
+        checkedCount++;
+    }
+    if (ateWellValue) {
+        checkedCount++;
+    }
+    if (trainedTodayValue) {
+        checkedCount++;
+    }
+
+    // Getting the current date
+    var today = new Date();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+    set(ref(db, 'data/' + date), {
+        DATE: date,
+        BAL_FLAG: checkedCount
+    }).then(() => {
+        alert("MPIKAN")
+    })
+        .catch(() => {
+            alert("Έγινε μαλακία επικοινωνήστε με τον CEIDA που το φτιαξε")
+        });
+}
+
+submitButton.addEventListener('click', submitData);
+

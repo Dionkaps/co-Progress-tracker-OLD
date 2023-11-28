@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar Heat Map</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://d3js.org/d3.v6.js" defer></script>
+    <script src="calendarHeatMap.js" defer></script>
+    <script src="firebase.js" type="module" defer></script>
 </head>
 
 <body>
@@ -14,27 +17,15 @@
             <h4 style="font-family: Arial, Helvetica, sans-serif;color:grey;">Order Month Calendar</h4>
         </center>
     </div>
-    <form id="myForm">
-        <label>
-            <input type="checkbox" name="betterThanYesterday" id="betterThanYesterday"> Got better than yesterday?
-        </label>
-        <br>
 
-        <label>
-            <input type="checkbox" name="ateWell" id="ateWell"> Did you eat well?
-        </label>
-        <br>
+    <input type="checkbox" name="betterThanYesterday" id="betterThanYesterday"> Got better than yesterday?
+    <br>
+    <input type="checkbox" name="ateWell" id="ateWell"> Did you eat well?
+    <br>
+    <input type="checkbox" name="trainedToday" id="trainedToday"> Did you train today?
+    <br>
+    <button id="submitBtn">SUBMIT</button>
 
-        <label>
-            <input type="checkbox" name="trainedToday" id="trainedToday"> Did you train today?
-        </label>
-        <br>
-
-        <input type="button" value="Submit" onclick="getCheckboxValues()">
-    </form>
-    <script src="https://d3js.org/d3.v6.js"></script>
-    <script src="calendarHeatMap.js"></script>
-    <script src="firebase.js"></script>
 </body>
 
 </html>
