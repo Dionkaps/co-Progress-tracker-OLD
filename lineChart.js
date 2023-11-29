@@ -78,7 +78,7 @@ function createChart() {
             fill: false,
             borderColor: 'rgb(153,50,204)',
             tension: 0.2,
-            pointRadius: 5,
+            pointRadius: 8,
         }]
     };
 

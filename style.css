@@ -22,21 +22,21 @@
   cursor: pointer;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Default state */
 #submitBtn,
 #weightSubmitBtn {
-  color: #ffffff;
-  background-color: rgb(31, 61, 183);
+  color: #323232;
+  background-color: #dfe1e4;
 }
 
 /* Hover state */
 #submitBtn:hover,
 #weightSubmitBtn:hover {
-  background-color: rgb(44, 8, 127);
+  background-color: #dfe1e4;
 }
 
 body {
