@@ -74,6 +74,6 @@ body {
   border-radius: 10px;
   width: 40%;
   box-sizing: border-box;
-  margin: 10px auto;
+  margin: top 20px;
   /* Add margin to create space above and below the input field */
 }
