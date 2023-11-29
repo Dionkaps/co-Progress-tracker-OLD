@@ -135,7 +135,7 @@ function submitData() {
         alert("MPIKAN")
     })
         .catch(() => {
-            alert("Έγινε μαλακία επικοινωνήστε με τον CEIDA που το φτιαξε")
+            alert("Έγινε μαλακία επικοινωνήστε με τον CEIDα που το φτιαξε")
         });
     window.location.reload();
 }

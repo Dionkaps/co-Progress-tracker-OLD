@@ -18,6 +18,9 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 var weightData = [];
 
+var weightSubmitBtn = document.getElementById('weightSubmitBtn');
+var weightInput = document.getElementById('weightInput');
+
 async function FindWeightData() {
     const dbref = ref(db);
 
@@ -109,6 +112,26 @@ function getWeekNumber(date) {
     return weekNumber;
 }
 
+function submitWeightData() {
+    // Storing checkbox values in variables
+    var weightInputValue = weightInput.value;
 
+    // Getting the current date
+    var today = new Date();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+    set(ref(db, 'weight/' + date), {
+        date: date,
+        weight: weightInputValue
+    }).then(() => {
+        alert("MPIKAN")
+        window.location.reload();
+    })
+        .catch(() => {
+            alert("Έγινε μαλακία επικοινωνήστε με τον CEIDα που το φτιαξε")
+        });
+    
+}
+weightSubmitBtn.addEventListener('click', submitWeightData);
 // Call the function to fetch data from Firebase
 FindWeightData();
