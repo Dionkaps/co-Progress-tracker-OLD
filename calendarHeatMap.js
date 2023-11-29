@@ -10,13 +10,13 @@ async function drawHeatMap(dataset) {
         var months_name = d3.groups(dataset, d => d.M_NAME);
 
         var week = ["Sun", "Tue", "Thu", "Sat"];
-        var legends = ["Balance Pending", "No Order Recieved", "Order Recieved"];
+        //var legends = ["Balance Pending", "No Order Recieved", "Order Recieved"];
 
         var box = 12; //cell size - ideal is 12 to 25
 
         //Dimensions
         var dim = {
-            width: months.length * 80 + 360,
+            width: months.length * 80 + 160,
             height: box * 7 + 80,
             margin: {
                 top: 10,
@@ -47,7 +47,7 @@ async function drawHeatMap(dataset) {
         //Parent SVG
         var svg = d3.select('#orderHeatMap')
             .append('svg')
-            .attr('width', screenWidth)
+            .attr('width', dim.width)
             .attr('height', dim.height)
             .classed('svg-area', true);
 
@@ -119,7 +119,7 @@ async function drawHeatMap(dataset) {
             .attr("height", box)
             .attr("x", (d, i) => 140 * (i % 3))
             .attr("y", -11)
-            .attr("fill", (d, i) => colorScale(i - 1));
+            .attr("fill", (d, i) => colorScale(i));
 
         legend.selectAll("text")
             .data(legends)

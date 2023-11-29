@@ -137,4 +137,5 @@ function submitData() {
         .catch(() => {
             alert("Έγινε μαλακία επικοινωνήστε με τον CEIDA που το φτιαξε")
         });
+    window.location.reload();
 }
