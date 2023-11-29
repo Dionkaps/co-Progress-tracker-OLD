@@ -46,26 +46,34 @@ body {
 #orderHeatMap {
   overflow-x: scroll;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
+  /* Add margin to create space */
 }
 
-#myChart {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-#weightInput {
-  width: 50%;
-  /* You can adjust the width as needed */
-  box-sizing: border-box;
-  /* Include padding and border in the width */
-  margin: 0 auto;
+#checkBoxes {
+  margin-bottom: 20px;
+  /* Add margin to create space below checkboxes */
 }
 
 #submitBtn,
 #weightSubmitBtn {
   display: block;
   margin: 10px auto;
-  /* Adjust margin as needed */
+  /* Add margin to create space above and below buttons */
+}
+
+#myChart {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  /* Add margin to create space above and below the chart */
+}
+
+#weightInput {
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  width: 40%;
+  box-sizing: border-box;
+  margin: 10px auto;
+  /* Add margin to create space above and below the input field */
 }
