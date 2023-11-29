@@ -76,8 +76,9 @@ function createChart() {
             label: 'Weight Journey',
             data: averagedWeights,
             fill: false,
-            borderColor: 'rgb(75, 192, 192)',
+            borderColor: 'rgb(153,50,204)',
             tension: 0.2,
+            pointRadius: 5,
         }]
     };
 

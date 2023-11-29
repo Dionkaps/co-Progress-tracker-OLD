@@ -1,12 +1,71 @@
-.svg-area
-{
+.svg-area {
   background-color: rgb(255, 255, 255) !important;
-  border:1px solid rgb(226, 226, 226);
+  border: 1px solid rgb(226, 226, 226);
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  color:#272727 !important;
+  color: #272727 !important;
 }
-.heatMapMonths-labels{
+
+.heatMapMonths-labels {
   /* text-anchor: middle; */
   font-size: 12px;
+}
+
+#submitBtn,
+#weightSubmitBtn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Default state */
+#submitBtn,
+#weightSubmitBtn {
+  color: #ffffff;
+  background-color: rgb(155, 31, 183);
+}
+
+/* Hover state */
+#submitBtn:hover,
+#weightSubmitBtn:hover {
+  background-color: rgb(91, 8, 127);
+}
+
+body {
+  text-align: center;
+}
+
+#orderHeatMap {
+  overflow-x: scroll;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#myChart {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#weightInput {
+  width: 50%;
+  /* You can adjust the width as needed */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  margin: 0 auto;
+}
+
+#submitBtn,
+#weightSubmitBtn {
+  display: block;
+  margin: 10px auto;
+  /* Adjust margin as needed */
 }
