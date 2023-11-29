@@ -52,6 +52,9 @@ body {
 
 #checkBoxes {
   margin-bottom: 20px;
+  background-color: rgba(172, 102, 222, 0.617) !important;
+  width: 80%;
+  border-radius: 20px;
   /* Add margin to create space below checkboxes */
 }
 
