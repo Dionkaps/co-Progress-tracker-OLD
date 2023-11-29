@@ -41,7 +41,7 @@ async function drawHeatMap(dataset) {
         // colorScale
         var colorScale = d3.scaleQuantize()
             .domain([0, 3])
-            .range(['#dfe1e4', '#80e49a', '#40c463', '#19cf49']);
+            .range(['#dfe1e4', '#80e49a', '#64CD80', '#19cf49']);
 
         var screenWidth = window.innerWidth;
         //Parent SVG

@@ -30,13 +30,13 @@
 #submitBtn,
 #weightSubmitBtn {
   color: #ffffff;
-  background-color: rgb(155, 31, 183);
+  background-color: rgb(31, 61, 183);
 }
 
 /* Hover state */
 #submitBtn:hover,
 #weightSubmitBtn:hover {
-  background-color: rgb(91, 8, 127);
+  background-color: rgb(44, 8, 127);
 }
 
 body {

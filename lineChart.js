@@ -73,7 +73,7 @@ function createChart() {
     const data = {
         labels: labels,
         datasets: [{
-            label: 'Weight Journey',
+            label: 'Weight',
             data: averagedWeights,
             fill: false,
             borderColor: 'rgb(153,50,204)',
