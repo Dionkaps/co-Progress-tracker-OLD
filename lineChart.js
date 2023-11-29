@@ -94,6 +94,9 @@ function createChart() {
                     display: false
                 }
             }]
+        },
+        legend: {
+            display: false
         }
     };
 
@@ -131,7 +134,7 @@ function submitWeightData() {
         .catch(() => {
             alert("Έγινε μαλακία επικοινωνήστε με τον CEIDα που το φτιαξε")
         });
-    
+
 }
 weightSubmitBtn.addEventListener('click', submitWeightData);
 // Call the function to fetch data from Firebase
