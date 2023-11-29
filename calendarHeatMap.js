@@ -109,7 +109,7 @@ async function drawHeatMap(dataset) {
         }
 
         // Legends
-        var legend = ctr.append("g")
+        /*var legend = ctr.append("g")
             .attr("transform", `translate(0,10)`);
 
         legend.selectAll("rect")
@@ -127,7 +127,7 @@ async function drawHeatMap(dataset) {
             .attr("x", (d, i) => 140 * (i % 3) + box + 2)
             .attr("y", 0)
             .text((d) => d)
-            .style("font-size", "12px");
+            .style("font-size", "12px");*/
 
     } catch (error) {
         console.error("Error processing data:", error);
