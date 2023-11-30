@@ -118,7 +118,7 @@ function getWeekNumber(date) {
 
 function submitWeightData() {
     // Storing checkbox values in variables
-    var weightInputValue = weightInput.value;
+    var weightInputValue = parseInt(weightInput.value);
 
     // Getting the current date
     var today = new Date();
