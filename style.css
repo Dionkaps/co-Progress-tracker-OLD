@@ -41,7 +41,8 @@
 
 body {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Great Vibes";
+  font-size: larger;
 }
 
 #orderHeatMap {
@@ -58,7 +59,7 @@ body {
   padding: 20px;
   padding-left: 70px;
   padding-right: 70px;
-  background-color: rgba(172, 102, 222, 0.657) !important;
+  background-color: rgba(172, 102, 222, 0.417) !important;
   width: 50%;
   border-radius: 20px;
   /* Add margin to create space below checkboxes */
@@ -76,6 +77,8 @@ body {
 #myChart {
   background-color: rgba(172, 102, 222, 0.288) !important;
   border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
   max-width: 700px;
   margin: 20px auto;
@@ -86,6 +89,7 @@ body {
   border: 1px solid rgb(226, 226, 226);
   border-radius: 10px;
   width: 40%;
+  padding: 5px;
   box-sizing: border-box;
   margin: top 20px;
   /* Add margin to create space above and below the input field */
