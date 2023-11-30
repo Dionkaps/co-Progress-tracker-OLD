@@ -74,11 +74,7 @@ body {
 }
 
 #myChart {
-  margin-right: 20px;
-  margin-top: 30px;
-  padding: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 5px;
   background-color: rgba(172, 102, 222, 0.288) !important;
   border-radius: 20px;
   width: 100%;
