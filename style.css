@@ -75,7 +75,7 @@ body {
 
 #myChart {
   background-color: rgba(172, 102, 222, 0.288) !important;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
   max-width: 700px;
   margin: 20px auto;
