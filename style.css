@@ -4,7 +4,6 @@
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   color: #272727 !important;
-  overflow-x: hidden;
 }
 
 .heatMapMonths-labels {
@@ -75,9 +74,8 @@ body {
 }
 
 #myChart {
-  padding: 5px;
   background-color: rgba(172, 102, 222, 0.288) !important;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 100%;
   max-width: 700px;
   margin: 20px auto;
