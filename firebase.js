@@ -29,7 +29,7 @@ async function FindData() {
     const dbref = ref(db);
 
     try {
-        const snapshot = await get(child(dbref, "data/"));
+        const snapshot = await get(child(dbref, "Anastasia/data/"));
         if (snapshot.exists()) {
             console.log(snapshot.val());
             const dateListInput = snapshot.val();
@@ -128,7 +128,7 @@ function submitData() {
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-    set(ref(db, 'data/' + date), {
+    set(ref(db, 'Anastasia/data/' + date), {
         DATE: date,
         BAL_FLAG: checkedCount
     }).then(() => {

@@ -25,7 +25,7 @@ async function FindWeightData() {
     const dbref = ref(db);
 
     try {
-        const snapshot = await get(child(dbref, "weight/"));
+        const snapshot = await get(child(dbref, "Anastasia/weight/"));
         if (snapshot.exists()) {
             console.log(snapshot.val());
             weightData = snapshot.val();
@@ -124,7 +124,7 @@ function submitWeightData() {
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-    set(ref(db, 'weight/' + date), {
+    set(ref(db, 'Anastasia/weight/' + date), {
         date: date,
         weight: weightInputValue
     }).then(() => {
