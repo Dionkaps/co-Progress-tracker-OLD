@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kapkApp</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="https://icons8.com/icon/53372/internet">
     <script src="https://d3js.org/d3.v6.js" defer></script>
     <script src="calendarHeatMap.js" defer></script>
     <script src="firebase.js" type="module" defer></script>
@@ -26,6 +25,8 @@
             <br>
             <input type="checkbox" name="trainedToday" id="trainedToday"> Did you train today?
             <br>
+            <input type="checkbox" name="studiedToday" id="studiedToday"> Did you study today?
+            <br>
         </div>
 
     </center>
@@ -40,6 +41,11 @@
     <label for="weight">Weight:</label>
     <input type="text" id="weightInput" name="weight"><br><br>
     <button id="weightSubmitBtn">Submit Weight</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="changePage" onclick="window.location.href='dionisis.html'">See Dionisis Progress</button>
 </body>
 
 </html>

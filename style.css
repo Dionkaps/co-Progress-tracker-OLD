@@ -12,7 +12,8 @@
 }
 
 #submitBtn,
-#weightSubmitBtn {
+#weightSubmitBtn,
+#changePage {
   display: inline-block;
   padding: 5px 10px;
   font-size: 16px;
@@ -28,14 +29,16 @@
 
 /* Default state */
 #submitBtn,
-#weightSubmitBtn {
+#weightSubmitBtn,
+#changePage {
   color: #323232;
   background-color: #dfe1e4;
 }
 
 /* Hover state */
 #submitBtn:hover,
-#weightSubmitBtn:hover {
+#weightSubmitBtn:hover,
+#changePage:hover {
   background-color: #dfe1e4;
 }
 
@@ -65,10 +68,22 @@ body {
   /* Add margin to create space below checkboxes */
 }
 
-
+#checkBoxesD {
+  text-align: left;
+  margin-right: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: rgba(0, 150, 255, 0.417) !important;
+  width: 50%;
+  border-radius: 20px;
+  /* Add margin to create space below checkboxes */
+}
 
 #submitBtn,
-#weightSubmitBtn {
+#weightSubmitBtn,
+#changePage {
   display: block;
   margin: 10px auto;
   /* Add margin to create space above and below buttons */
@@ -76,6 +91,17 @@ body {
 
 #myChart {
   background-color: rgba(172, 102, 222, 0.288) !important;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  /* Add margin to create space above and below the chart */
+}
+
+#myChartD {
+  background-color: rgba(0, 150, 255, 0.417) !important;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;

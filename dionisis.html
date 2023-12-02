@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kapkApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://d3js.org/d3.v6.js" defer></script>
+    <script src="calendarHeatMapD.js" defer></script>
+    <script src="firebaseD.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="lineChartD.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="orderHeatMap" style="overflow-x:scroll;width:80%;margin:0 auto;">
+    </div>
+
+    <center>
+        <div id="checkBoxesD">
+            <input type="checkbox" name="betterThanYesterday" id="betterThanYesterday"> Got better than yesterday?
+            <br>
+            <input type="checkbox" name="ateWell" id="ateWell"> Did you eat well?
+            <br>
+            <input type="checkbox" name="trainedToday" id="trainedToday"> Did you train today?
+            <br>
+            <input type="checkbox" name="studiedToday" id="studiedToday"> Did you study today?
+            <br>
+        </div>
+
+    </center>
+    <button id="submitBtn">Submit</button>
+    <br>
+    <br>
+    <h3>Weight Tracker</h3>
+    <br>
+    <br>
+    <canvas id="myChartD" style="width:100%;max-width:700px"></canvas>
+
+    <label for="weight">Weight:</label>
+    <input type="text" id="weightInput" name="weight"><br><br>
+    <button id="weightSubmitBtn">Submit Weight</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="changePage" onclick="window.location.href='index.html'">See Anastasias Progress</button>
+</body>
+
+</html>
