@@ -76,7 +76,7 @@ function createChart() {
             label: 'Weight',
             data: averagedWeights,
             fill: false,
-            borderColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(0, 150, 255)',
             tension: 0.2,
             pointRadius: 6,
         }]
