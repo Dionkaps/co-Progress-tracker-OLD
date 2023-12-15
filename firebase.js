@@ -129,9 +129,11 @@ function submitData() {
         checkedCount++;
     }
 
-    // Getting the current date
-    var today = new Date();
-    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+// Getting the current date
+var today = new Date();
+// Subtracting one day from the current date
+today.setDate(today.getDate() - 1);
+var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
     set(ref(db, 'Anastasia/data/' + date), {
         DATE: date,
