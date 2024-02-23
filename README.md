@@ -1,7 +1,7 @@
 # co-Progress-tracker-OLD 
 
-This site is made using Javascript (it's the old version)
-New version: co-Progress-tracker-NEW, it's made using flutter 
+- This site is made using Javascript (it's the old version)
+- New version: co-Progress-tracker-NEW, it's made using flutter 
 
 ## Overview
 
